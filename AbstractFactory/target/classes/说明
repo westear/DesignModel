@@ -1,0 +1,15 @@
+抽象工厂模式
+    为创建一组相关或相互依赖的对象提供一个接口，并且无须指定他们的具体类。
+
+demo1为示例：
+    1.有两个相互影响的产品线，也叫产品族 （demo1 中的 female/male, 包名分别为： group1/group2）
+    2.两条产品线上分别有三类特性相同的产品 (demo1 中用 human color 区分)
+    3.有两条产品线，就需要两个工厂来生产产品 （demo1 中 对应 factory.group1.FemaleHumanFactory / factory.group2.MaleHumanFactory）
+
+优点:
+    封装性：每个产品的实现类不是高层模块需要关心的
+    产品族内的约束为非公开状态。只在工厂类内部实现
+
+缺点：
+    产生类个数很多
+    产品族的扩展非常困难

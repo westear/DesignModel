@@ -1,0 +1,24 @@
+观察者模式（发布订阅模式）: 定义对象间一种一对多的依赖关系，使得每当一个对象改变状态，则所有依赖于它的对象都会得到通知并被自动更新。
+
+角色:
+    Target(被观察者):
+        抽象类/接口，一般提供可以被观察到的行为和信息
+    Observer(观察者):
+        抽象类/接口，一般提供获取信息的逻辑，拉取信息
+    TargetImpl(具体的被观察者实现类):
+        extend Target / implements Target, 定义被观察者自己被观察行为的具体业务逻辑
+    ObserverImpl(具体的观察者实现类):
+        extend Observer / implements Observer, 定义观察者获取观察信息后的一系列处理逻辑
+    Observable(抽象观察者管理接口)
+        一般提供观察者的管理逻辑：增删改查.....，
+        示例参考: demo2：也可以把这些逻辑放在Observer接口里，这样ObserverImpl只用实现Observer这一个接口就可以了，否则需要同时实现Observer和Observable这两个接口
+
+    示例参考: demo3: java.util.Observer、java.util.Observable 实现了 demo2中的 Observer 和 Observable 接口 功能
+
+
+场景:
+    关联行为场景。关联行为是可以拆分的
+    事件多级触发场景
+    跨系统的消息交换场景，如消息队列处理机制
+
+和责任链模式的区别:

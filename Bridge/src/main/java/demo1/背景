@@ -1,0 +1,2 @@
+两个绘图工具DP1,DP2,分别需要画出矩形和圆形，画法分为画线和画圆，
+需要实现RectangleV1,RectangleV2;CircleV1,CircleV2

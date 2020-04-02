@@ -1,0 +1,15 @@
+demo1\Factory.class
+demo2\ConcreteDecorator1.class
+demo1\Footer2.class
+demo1\Component.class
+demo1\Header1.class
+demo2\ConcreteDecorator2.class
+demo1\Header2.class
+demo2\Decorator.class
+demo1\SalesTicket.class
+demo2\Component.class
+demo2\ConcreteComponent.class
+demo1\Client.class
+demo2\Client.class
+demo1\Footer1.class
+demo1\TicketDecorator.class
