@@ -32,6 +32,7 @@
     <module>Interpreter</module>
       <module>Singleton</module>
     <module>Facade</module>
+      <module>ApplicationDemo</module>
   </modules>
 
   <name>DesignModel</name>
